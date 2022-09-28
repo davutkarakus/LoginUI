@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/sing_In_Fragment">
+
+    <fragment
+        android:id="@+id/sing_In_Fragment"
+        android:name="com.davutkarakus.loginui1.Sing_In_Fragment"
+        android:label="Sing_In_Fragment" >
+        <action
+            android:id="@+id/action_sing_In_Fragment_to_sing_Up_Fragment"
+            app:destination="@id/sing_Up_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sing_Up_Fragment"
+        android:name="com.davutkarakus.loginui1.Sing_Up_Fragment"
+        android:label="Sing_Up_Fragment" >
+        <action
+            android:id="@+id/action_sing_Up_Fragment_to_sing_In_Fragment"
+            app:destination="@id/sing_In_Fragment" />
+    </fragment>
+</navigation>
